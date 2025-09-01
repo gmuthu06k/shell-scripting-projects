@@ -1,0 +1,5 @@
+# ignore real env file and backups
+.env
+/backups/
+*.sql
+*.sql.gz
