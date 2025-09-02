@@ -7,9 +7,10 @@ This repository contains real-world **shell scripting projects** designed for au
 2. **Upgrade Database Script** - Autmates Database Upgrade weekly using cron.
 3. **List of active services** - Script to check the List of active services in Linux.
 4. **Disk Usage Alert** - Script to check Disk usage and send an alert when usage is above 80%
-5. **Log Rotation** – Rotates and compresses logs to save disk space.
-6. **User Management** – Bulk user creation/deletion from CSV.
-7. **System Monitoring** – Tracks CPU, memory, and disk usage.  
+5. **Log Cleanup** - Script to clean the disk space on a regular interval for logs older than 1 week
+6. **Install Pakages** - Script to automate the software installation in Linux.
+7. **User Management** – Bulk user creation/deletion from CSV.
+8. **System Monitoring** – Tracks CPU, memory, and disk usage.  
 
 ## 🎯 Purpose
 This repo serves as a **portfolio** to showcase shell scripting skills relevant for IT, DevOps, and System Admin roles.
