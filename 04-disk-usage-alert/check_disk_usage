@@ -1,0 +1,26 @@
+#!/bin/bash
+set -euo pipefail
+
+THRESHOLD=80
+HOSTNAME=$(hostname)
+DATE=$(date '+%Y-%m-%d %H:%M:%S')
+SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && pwd)"
+LOG_FILE="${SCRIPT_DIR}/disk_usage_alert.log"
+touch $LOG_FILE
+
+echo "Disk usage check on $HOSTNAME at $DATE" | tee -a "$LOG_FILE"
+echo "---------------------------------------------------------------------" | tee -a "$LOG_FILE"
+
+# Exclude tmpfs and overlay mounts
+df -h --exclude-type=tmpfs --exclude-type=overlay --output=target,pcent | tail -n +2 | while read -r MOUNT USAGE; do
+USAGE_NUM=$(echo "$USAGE" | tr -d '%')
+if (( $USAGE_NUM >= $THRESHOLD )); then
+ALERT_MSG="ALERT: $MOUNT is at ${USAGE_NUM}% usage (threshold: %{THRESHOLD}%)"
+echo "$ALERT_MSG" | tee -a "$LOG_FILE"
+echo "$ALERT_MSG" | mail -s "Disk Alert on $HOSTNAME" xxx@yy.com
+else
+echo "✅ $MOUNT is at ${USAGE_NUM}% usage (OK)" | tee -a "$LOG_FILE"
+fi
+done
+
+echo "" >> "$LOG_FILE"
