@@ -12,7 +12,7 @@ This repository contains real-world **shell scripting projects** designed for au
 7. **Connectivity Check** - Script to automate remote connectivity check for 1000 Linux machines
 8. **Service Start** - Script to start a down service automatically
 9. **System Monitoring** - Tracks CPU, memory, and disk usage.
-10. **User Management** – Bulk user creation/deletion from CSV.
+10. **DB Process Check** – To check all the running processes and log running queries
 
 ## 🎯 Purpose
 This repo serves as a **portfolio** to showcase shell scripting skills relevant for IT, DevOps, and System Admin roles.
