@@ -11,8 +11,8 @@ This repository contains real-world **shell scripting projects** designed for au
 6. **Install Pakages** - Script to automate the software installation in Linux.
 7. **Connectivity Check** - Script to automate remote connectivity check for 1000 Linux machines
 8. **Service Start** - Script to start a down service automatically
-9. **User Management** – Bulk user creation/deletion from CSV.
-10. **System Monitoring** – Tracks CPU, memory, and disk usage.  
+9. **System Monitoring** - Tracks CPU, memory, and disk usage.
+10. **User Management** – Bulk user creation/deletion from CSV.
 
 ## 🎯 Purpose
 This repo serves as a **portfolio** to showcase shell scripting skills relevant for IT, DevOps, and System Admin roles.
