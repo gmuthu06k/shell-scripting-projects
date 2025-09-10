@@ -13,6 +13,7 @@ This repository contains real-world **shell scripting projects** designed for au
 8. **Service Start** - Script to start a down service automatically
 9. **System Monitoring** - Tracks CPU, memory, and disk usage.
 10. **DB Process Check** – To check all the running processes and log running queries
+11. **RAM memory Check** - Check RAM memory and send alert email
 
 ## 🎯 Purpose
 This repo serves as a **portfolio** to showcase shell scripting skills relevant for IT, DevOps, and System Admin roles.
